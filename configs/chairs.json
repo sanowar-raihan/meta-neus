@@ -1,0 +1,55 @@
+{
+    "dataset_root": "./data/chairs/03001627",
+    "splits_path": "./data/chairs/chair_splits.json",
+    
+    "geometry_net":{
+        "in_dim": 3,
+        "hidden_dim": 256,
+        "num_hidden": 4,
+        "out_dim": 257,
+        "max_freq": 8,
+        "num_freqs": 20,
+        "radius": 0.5
+    },
+    
+    "appearance_net":{
+        "in_dim": 9,
+        "feature_dim": 256,
+        "hidden_dim": 256,
+        "num_hidden": 2,
+        "out_dim": 3,
+        "max_freq": 4,
+        "num_freqs": 10
+    },
+    
+    "s_density": {
+        "init_val": 0.3
+    },
+ 
+    "neus":{
+        "num_samples": 128,
+        "perturb": true,
+        "white_bkgd": true
+    },
+
+    "meta_epochs": 3,
+    "report_iter": 100,
+    
+    "train_views": 25,
+    "meta_lr": 5e-5,
+    "train_batchsize": 128,
+    "inner_lr": 1e-4,
+    "inner_steps": 32,
+    "igr_weight": 0.1,
+    "mask_weight": 0.1,
+
+    "tto_views": 5,
+    "tto_lr": 1e-4,
+    "tto_batchsize": 128,
+    "tto_steps": 2048,
+
+    "test_views": 25,
+    "test_batchsize": 512,
+    "ckptdir": "./ckpts",
+    "resultdir": "./results"
+}
