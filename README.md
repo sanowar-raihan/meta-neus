@@ -1,4 +1,4 @@
-## MetaNeuS: Meta-Learning the Neural Implicit Surface of Object Categories
+## MetaNeuS: Meta-Learning for Neural Implicit Surface of Object Categories
 **MetaNeuS** uses Meta-Learning to learn a template shape of an object category from a database of multiview images. This category template is encoded in the weights of the network as a signed distance function(SDF). Starting from this meta-learned template, we can quickly reconstruct a novel object at test time using a small number of views.  
 
 This project builds on the NeurIPS'21 paper ["NeuS: Learning Neural Implicit Surfaces by Volume Rendering for Multi-view Reconstruction"](https://arxiv.org/abs/2106.10689). NeuS is a scene-specific method that requires a large number of multiview inputs. This work extends NeuS using meta-learning to handle unseen objects at test time, and also enables sparse view 3d reconstruction.  
